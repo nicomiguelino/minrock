@@ -56,6 +56,9 @@ npm run dev
 
 Visit `http://localhost:4321` in your browser to view your live blog.
 
+> [!NOTE]
+> `npm install` also sets up a [Husky](https://typicode.github.io/husky/) pre-commit hook that runs `npm run check`. Fix failures before committing.
+
 ---
 
 ## 📂 Project Structure
