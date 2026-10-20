@@ -39,7 +39,8 @@
     "audit:security": "node scripts/audit-security.mjs",
     "audit:google": "node scripts/audit-google-search.mjs",
     "astro": "astro",
-    "postinstall": "node scripts/sign-native-bindings.js"
+    "postinstall": "node scripts/sign-native-bindings.js",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
@@ -50,6 +51,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@types/node": "^22.13.9",
+    "husky": "^9.1.7",
     "typescript": "^5.7.3"
   },
   "allowScripts": {
