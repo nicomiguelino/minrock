@@ -1,5 +1,5 @@
 ---
-// src/components/FontToggle.astro
+// src/components/FontSelector.astro
 // Dropdown menu for Minrock fonts (Sans Serif, Serif for all text, Serif for headings only, Monospace).
 // Add entries to `fonts` and a matching `html[data-font="<value>"]` rule in global.css
 // to support more options.
@@ -204,7 +204,7 @@ const fonts = [
 </style>
 
 <script>
-  function setupFontToggle() {
+  function setupFontSelector() {
     const btn = document.getElementById('font-toggle-btn');
     const dropdown = document.getElementById('font-dropdown');
     const selector = document.getElementById('font-selector');
@@ -303,6 +303,6 @@ const fonts = [
     });
   }
 
-  setupFontToggle();
-  document.addEventListener('astro:after-swap', setupFontToggle);
+  setupFontSelector();
+  document.addEventListener('astro:after-swap', setupFontSelector);
 </script>

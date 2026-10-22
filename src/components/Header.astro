@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from '../config/site';
 import ThemeToggle from './ThemeToggle.astro';
-import FontToggle from './FontToggle.astro';
+import FontSelector from './FontSelector.astro';
 import SocialDropdown from './SocialDropdown.astro';
 import LanguageSelector from './LanguageSelector.astro';
 
@@ -66,7 +66,7 @@ const showFontSwitcher = features.fontSwitcher !== false;
       <div class="header-controls">
         <SocialDropdown />
         {showThemeSwitcher && <ThemeToggle />}
-        {showFontSwitcher && <FontToggle />}
+        {showFontSwitcher && <FontSelector />}
         <LanguageSelector />
       </div>
     </div>
