@@ -406,7 +406,7 @@
         .querySelectorAll('.theme-dropdown.open, .social-dropdown-menu.open')
         .forEach((d) => d.classList.remove('open'));
       document
-        .querySelectorAll('#theme-toggle-btn, #social-menu-btn')
+        .querySelectorAll('#theme-selector-btn, #social-menu-btn')
         .forEach((b) => b.setAttribute('aria-expanded', 'false'));
 
       const open = dropdown?.classList.toggle('open');
